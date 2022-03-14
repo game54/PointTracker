@@ -95,10 +95,10 @@ class App {
       );
   }
 
-  _loadMap() {
-    // Hardcoding position for now
-    const latitude = 38.9582305;
-    const longitude = 20.7495854;
+  _loadMap(position) {
+    console.log(position);
+    const { latitude } = position.coords;
+    const { longitude } = position.coords;
     // console.log(`https://www.google.gr/maps/@${latitude},${longitude}`);
 
     const coords = [latitude, longitude];
